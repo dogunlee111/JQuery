@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("h1:nth-child(1)").text("<a href='#'>text()와 html() 메소드 연습</a>"); // 하이터링크 코드 <a> , text는 글자만 나오게 하는것
+            $("h1:nth-child(2)").html("<a href='#'>text()와 html() 메소드 연습</a>"); // nth-child(1), nth-child(2) => 선택자를 두어서 위아래 <h1></h1> 중 첫번째 <h1></h1>에 하이퍼 링크를 걸수 있다.
+        });
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <h1></h1>
+</body>
+</html>
